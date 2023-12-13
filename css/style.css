@@ -106,7 +106,6 @@ p {
     padding-bottom: 20px;
 }
 
-
 .hero-banner h2{
     color: #32343c;
     background-color: #9ecacc;
@@ -115,15 +114,11 @@ p {
     padding-right: 10px;
 }
 
-/* PAGE SECTIONS */
-.page-wrapper{
-
-}
-
+/* PAGE Sections */
 .page-section{
     padding-bottom: 30px;
     display: flex;
-      justify-content: space-between;
+    justify-content: space-between;
 }
 .section-header {
   flex-basis: 20%;
@@ -149,26 +144,56 @@ p {
     padding: 10px;
 }
 
-.project-main img{
-    height: 400px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-size: cover;
-    background-position: center;
+/* Articles */
+.section-portfolio{
+    display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two columns for secondary projects */
+  grid-gap: 10px;
 }
 
-article{
-    background-color: rgba(7, 82, 163, 0.5);
+.project-main {
+  grid-column: 1 / -1;
+  height: 450px;
 }
 
 .project-secondary {
-
+  height: 150px;
 }
 
-.project-secondary img{
-    height: 200px;
-width: 50%;
-    margin-bottom: 25px;
+.project {
+    width: 100%;
+    background-image: url("../images/02-portfolio-1.jpg");
     background-size: cover;
     background-position: center;
+    border:  5px solid #9ecacc;
+}
+.project-flex {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 82, 163, 0.5);
+
+    /* FLex properties */
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+}
+
+.project-flex:hover {
+    background-color: rgba(7, 82, 163, 0); /* Fully opaque background on hover */
+}
+
+.project-title{
+    color: #32343c;
+    background-color: #9ecacc;
+    margin-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.project-title p{
+    padding: 0px;
 }
