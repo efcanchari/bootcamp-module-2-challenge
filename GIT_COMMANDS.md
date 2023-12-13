@@ -15,7 +15,7 @@ ssh-keygen -t ed25519 -b 4096 -C "<username@emaildomain.com>" -f <ssh-key-name>
 
 
 # example 
-ssh-keygen -t ed25519 -b 4096 -C "frank.lapa@symovetech.com" -f id_github_bootcamp
+ssh-keygen -t ed25519 -b 4096 -C "frank.lapa@itexp.co.uk" -f id_github_bootcamp
 ```
 
 
